@@ -57,17 +57,17 @@ public class CommunityProject {
         }
     }
     // 8. Write a main method that constructs at least 2 objects of your class using the constructor and then calls all of the methods that you created above to test them.
-    public static void main(String[] args) {
-        CommunityProject member1 = new CommunityProject("Alice", 1, 50.0);
-        CommunityProject member2 = new CommunityProject("Bob", 2, 75.0);
+    // public static void main(String[] args) {
+        // CommunityProject member1 = new CommunityProject("Alice", 1, 50.0);
+        // CommunityProject member2 = new CommunityProject("Bob", 2, 75.0);
 
-        member1.print();
-        member2.print();
+        // member1.print();
+        // member2.print();
 
-        member1.payDues(20.0);
-        member2.payDues(30.0);
+        // member1.payDues(20.0);
+        // member2.payDues(30.0);
 
-        System.out.println(member1);
-        System.out.println(member2);
-    }
+        // System.out.println(member1);
+        // System.out.println(member2);
+    // }
 }   
