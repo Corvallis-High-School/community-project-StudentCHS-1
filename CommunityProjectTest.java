@@ -269,18 +269,28 @@ public class CommunityProjectTest {
     }
     
     // ==================== R#6: toString() Method (3 points) ====================
-    
     @Test
-    @DisplayName("R#6: Class has a toString() method")
+    @DisplayName("R#6: Class overrides toString()")
     public void testToStringMethodExists() {
         try {
-            Method toStringMethod = projectClass.getMethod("toString");
-            assertEquals(String.class, toStringMethod.getReturnType(), 
-                "toString() method should return a String");
+            Method toStringMethod = projectClass.getDeclaredMethod("toString"); // only methods declared in the class
+            assertEquals(String.class, toStringMethod.getReturnType(), "toString() should return a String");
         } catch (NoSuchMethodException e) {
-            fail("Class must have a toString() method");
+            fail("Class must override toString()");
         }
     }
+
+    // @Test
+    // @DisplayName("R#6: Class has a toString() method")
+    // public void testToStringMethodExists() {
+    //     try {
+    //         Method toStringMethod = projectClass.getMethod("toString");
+    //         assertEquals(String.class, toStringMethod.getReturnType(), 
+    //             "toString() method should return a String");
+    //     } catch (NoSuchMethodException e) {
+    //         fail("Class must have a toString() method");
+    //     }
+    // }
     
     @Test
     @DisplayName("R#6: toString() returns all instance variable information")
