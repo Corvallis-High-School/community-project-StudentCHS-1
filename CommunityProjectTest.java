@@ -269,7 +269,6 @@ public class CommunityProjectTest {
     }
     
     // ==================== R#6: toString() Method (3 points) ====================
-    // ...existing code...
     @Test
     @DisplayName("R#6: Class overrides toString()")
     public void testToStringMethodExists() {
