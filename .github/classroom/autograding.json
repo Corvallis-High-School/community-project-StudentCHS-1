@@ -3,7 +3,7 @@
     {
       "name": "R1 - Instance Variables",
       "setup": "",
-      "run": "java -jar lib/junit-platform-console-standalone-1.10.1.jar --class-path .:lib/junit-jupiter-api-5.10.1.jar --select-method CommunityProjectTest#testInstanceVariables",
+      "run": "java -jar lib/junit-platform-console-standalone-6.0.1.jar execute --class-path .:lib/junit-jupiter-api-6.0.1.jar --select-method CommunityProjectTest#testInstanceVariables",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -13,7 +13,7 @@
     {
       "name": "R2 - Constructor",
       "setup": "",
-      "run": "java -jar lib/junit-platform-console-standalone-1.10.1.jar --class-path .:lib/junit-jupiter-api-5.10.1.jar --select-method CommunityProjectTest#testConstructorExists",
+      "run": "java -jar lib/junit-platform-console-standalone-6.0.1.jar execute --class-path .:lib/junit-jupiter-api-6.0.1.jar --select-method CommunityProjectTest#testConstructorExists",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -23,7 +23,7 @@
     {
       "name": "R3 - Print Method",
       "setup": "",
-      "run": "java -jar lib/junit-platform-console-standalone-1.10.1.jar --class-path .:lib/junit-jupiter-api-5.10.1.jar --select-method CommunityProjectTest#testPrintMethodExists",
+      "run": "java -jar lib/junit-platform-console-standalone-6.0.1.jar execute --class-path .:lib/junit-jupiter-api-6.0.1.jar --select-method CommunityProjectTest#testPrintMethodExists",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -33,7 +33,7 @@
     {
       "name": "R4 - Accessor Methods",
       "setup": "",
-      "run": "java -jar lib/junit-platform-console-standalone-1.10.1.jar --class-path .:lib/junit-jupiter-api-5.10.1.jar --select-method CommunityProjectTest#testGetterMethodsExist",
+      "run": "java -jar lib/junit-platform-console-standalone-6.0.1.jar execute --class-path .:lib/junit-jupiter-api-6.0.1.jar --select-method CommunityProjectTest#testGetterMethodsExist",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -43,7 +43,7 @@
     {
       "name": "R5 - Mutator Methods",
       "setup": "",
-      "run": "java -jar lib/junit-platform-console-standalone-1.10.1.jar --class-path .:lib/junit-jupiter-api-5.10.1.jar --select-method CommunityProjectTest#testSetterMethodsExist",
+      "run": "java -jar lib/junit-platform-console-standalone-6.0.1.jar execute --class-path .:lib/junit-jupiter-api-6.0.1.jar --select-method CommunityProjectTest#testSetterMethodsExist",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -53,7 +53,7 @@
     {
       "name": "R6 - toString Method",
       "setup": "",
-      "run": "java -jar lib/junit-platform-console-standalone-1.10.1.jar --class-path .:lib/junit-jupiter-api-5.10.1.jar --select-method CommunityProjectTest#testToStringMethodExists",
+      "run": "java -jar lib/junit-platform-console-standalone-6.0.1.jar execute --class-path .:lib/junit-jupiter-api-6.0.1.jar --select-method CommunityProjectTest#testToStringMethodExists",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -63,7 +63,7 @@
     {
       "name": "R7 - Additional Method",
       "setup": "",
-      "run": "java -jar lib/junit-platform-console-standalone-1.10.1.jar --class-path .:lib/junit-jupiter-api-5.10.1.jar --select-method CommunityProjectTest#testAdditionalMethodExists",
+      "run": "java -jar lib/junit-platform-console-standalone-6.0.1.jar execute --class-path .:lib/junit-jupiter-api-6.0.1.jar --select-method CommunityProjectTest#testAdditionalMethodExists",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -73,7 +73,7 @@
     {
       "name": "R8 - Main Method Testing",
       "setup": "",
-      "run": "java -jar lib/junit-platform-console-standalone-1.10.1.jar --class-path .:lib/junit-jupiter-api-5.10.1.jar --select-method CommunityProjectTest#testMainMethodExists",
+      "run": "java -jar lib/junit-platform-console-standalone-6.0.1.jar execute --class-path .:lib/junit-jupiter-api-6.0.1.jar --select-method CommunityProjectTest#testMainMethodExists",
       "input": "",
       "output": "",
       "comparison": "included",

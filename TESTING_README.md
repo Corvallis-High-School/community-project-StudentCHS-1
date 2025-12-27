@@ -4,7 +4,7 @@ This document explains how to use the autograding tests for this assignment.
 
 ## Files Included
 
-- **CommunityProjectTest.java** - JUnit 5 test suite that validates all 8 requirements
+- **CommunityProjectTest.java** - JUnit 6 test suite that validates all 8 requirements
 - **.github/workflows/classroom.yml** - GitHub Actions workflow for automatic grading
 - **.github/classroom/autograding.json** - Autograding configuration
 - **run_tests.bat** - Windows script to run tests locally
@@ -29,12 +29,12 @@ The test suite covers all requirements from Requirements.md:
 
 ### Prerequisites
 
-You need JUnit 5 JAR files in a `lib` folder:
+You need JUnit 6 JAR files in a `lib` folder:
 1. Create a `lib` folder in your project directory
 2. Download these files into the `lib` folder:
-   - [junit-jupiter-api-5.10.1.jar](https://repo1.maven.org/maven2/org/junit/jupiter/junit-jupiter-api/5.10.1/junit-jupiter-api-5.10.1.jar)
-   - [junit-jupiter-engine-5.10.1.jar](https://repo1.maven.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.jar)
-   - [junit-platform-console-standalone-1.10.1.jar](https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/1.10.1/junit-platform-console-standalone-1.10.1.jar)
+   - [junit-jupiter-api-6.0.1.jar](https://repo1.maven.org/maven2/org/junit/jupiter/junit-jupiter-api/6.0.1/junit-jupiter-api-6.0.1.jar)
+   - [junit-jupiter-engine-6.0.1.jar](https://repo1.maven.org/maven2/org/junit/jupiter/junit-jupiter-engine/6.0.1/junit-jupiter-engine-6.0.1.jar)
+   - [junit-platform-console-standalone-6.0.1.jar](https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/6.0.1/junit-platform-console-standalone-6.0.1.jar)
 
 ### Windows
 
@@ -46,14 +46,14 @@ run_tests.bat
 Option 2: Manual commands
 ```batch
 javac -cp .;lib/* *.java
-java -jar lib/junit-platform-console-standalone-1.10.1.jar --class-path .;lib/junit-jupiter-api-5.10.1.jar --scan-class-path
+java -jar lib/junit-platform-console-standalone-6.0.1.jar execute --class-path .;lib/junit-jupiter-api-6.0.1.jar --scan-class-path
 ```
 
 ### Mac/Linux
 
 ```bash
 javac -cp .:lib/* *.java
-java -jar lib/junit-platform-console-standalone-1.10.1.jar --class-path .:lib/junit-jupiter-api-5.10.1.jar --scan-class-path
+java -jar lib/junit-platform-console-standalone-6.0.1.jar execute --class-path .:lib/junit-jupiter-api-6.0.1.jar --scan-class-path
 ```
 
 ## GitHub Classroom Autograding

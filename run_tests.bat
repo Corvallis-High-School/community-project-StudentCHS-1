@@ -11,6 +11,6 @@ if %ERRORLEVEL% NEQ 0 (
 
 echo.
 echo Running tests...
-java -jar lib/junit-platform-console-standalone-1.10.1.jar --class-path .;lib/junit-jupiter-api-5.10.1.jar --scan-class-path
+java -jar lib/junit-platform-console-standalone-6.0.1.jar execute --class-path .;lib/junit-jupiter-api-6.0.1.jar --scan-class-path 
 
 pause
