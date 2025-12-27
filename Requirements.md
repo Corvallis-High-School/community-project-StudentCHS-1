@@ -14,7 +14,8 @@ This document outlines the requirements for the APCSA Community Project. Your cl
 | 6 | `toString()` method that returns all the information in the instance variables | 3 |
 | 7 | Additional method for your class that takes a parameter | 2 |
 | 8 | Main method (or separate class) that constructs at least 2 objects of your class using the constructor and then calls all of the methods that you created above to test them and print out the results | 10 |
-| **Total** | | **30** |
+| 9 | Update the main method to create at least 3 objects of your class using an array and then iterate through the array to call all of the methods on each object | 10 |
+| **Total** | | **40** |
 
 ## Detailed Requirements
 
