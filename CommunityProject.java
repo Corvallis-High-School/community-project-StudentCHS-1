@@ -9,11 +9,35 @@ public class CommunityProject {
         this.assignedBed = assignedBed;
         this.outstandingDues = outstandingDues;
     }
-    // 3. Write a print() method that uses System.out.println to print out all the instance variables.
+    // 3. Write a print() method with arguments that indicate how you want to print out the information, e.g. print(format) could print the data according to an argument that is “plain” or “table” where the data is printed in a table drawn with dashes and lines (|). 
     public void print() {
-        System.out.println("Member Name: " + memberName);
-        System.out.println("Assigned Bed: " + assignedBed);
-        System.out.println("Outstanding Dues: $" + outstandingDues);
+        // Default to plain format to preserve existing behavior
+        print("plain");
+    }
+
+    /**
+     * Prints the member information according to the requested format.
+     * Supported formats (case-insensitive):
+     *  - "plain": simple label/value lines.
+     *  - "table": a single-row table drawn with dashes (-) and pipes (|).
+     *
+     * Any other value falls back to "plain".
+     *
+     * @param format the desired output format, e.g. "plain" or "table"
+     */
+    public void print(String format) {
+        if (format != null && format.equalsIgnoreCase("table")) {
+            String border = "+----------------------+-------------+---------------------+";
+            System.out.println(border);
+            System.out.printf("| %-20s | %-12s | %-18s |%n", "Member Name", "Assigned Bed", "Outstanding Dues");
+            System.out.println(border);
+            System.out.printf("| %-20s | %-12d | $%-18.2f|%n", memberName, assignedBed, outstandingDues);
+            System.out.println(border);
+        } else {
+            System.out.println("Member Name: " + memberName);
+            System.out.println("Assigned Bed: " + assignedBed);
+            System.out.println("Outstanding Dues: $" + outstandingDues);
+        }
     }
     // 4. Create accessor (get) methods for each of the instance variables.
     public String getMemberName() {
@@ -58,16 +82,16 @@ public class CommunityProject {
     }
     // 8. Write a main method that constructs at least 2 objects of your class using the constructor and then calls all of the methods that you created above to test them.
     // public static void main(String[] args) {
-        // CommunityProject member1 = new CommunityProject("Alice", 1, 50.0);
-        // CommunityProject member2 = new CommunityProject("Bob", 2, 75.0);
+    //     CommunityProject member1 = new CommunityProject("Alice", 1, 50.0);
+    //     CommunityProject member2 = new CommunityProject("Bob", 2, 75.0);
 
-        // member1.print();
-        // member2.print();
+    //     member1.print("table");
+    //     member2.print();
 
-        // member1.payDues(20.0);
-        // member2.payDues(30.0);
+    //     member1.payDues(20.0);
+    //     member2.payDues(30.0);
 
-        // System.out.println(member1);
-        // System.out.println(member2);
+    //     member1.print("table");
+    //     member2.print();
     // }
 }   

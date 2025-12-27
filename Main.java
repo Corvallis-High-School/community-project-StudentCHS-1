@@ -6,14 +6,13 @@ class Main {
     CommunityProject member2 = new CommunityProject("Bob", 2, 75.0);
 
     // call all of the objects methods to test them
-    member1.print();
+    member1.print("table");
     member2.print();
 
     member1.payDues(20.0);
     member2.payDues(30.0);
 
-    System.out.println(member1);
-    System.out.println(member2);
-
+    member1.print("table");
+    member2.print();
   }
 }
