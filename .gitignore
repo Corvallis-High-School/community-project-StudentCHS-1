@@ -1,2 +1,4 @@
 # Exclude compiled classes
 *.class
+# Exclude library files folder
+lib/
