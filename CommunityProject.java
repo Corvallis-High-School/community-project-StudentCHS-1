@@ -1,6 +1,8 @@
 public class CommunityProject {
     // 1. write 3 instance variables for class: private type variableName;
-
+    private String projectName;
+    private String projectDescription;
+    private int numberOfVolunteers;
     // 2. Add a constructor with 3 parameters to set all of the instance variables to the given parameters.
 
     // 3. Write a print() method that uses System.out.println to print out all the instance variables.
