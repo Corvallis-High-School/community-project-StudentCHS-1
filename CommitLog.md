@@ -1,0 +1,2 @@
+# Commit Log
+The commit log is a record of all changes made to the codebase. It includes information about each commit, such as the author, date, and a brief description of the changes made. The commit log is an essential tool for tracking the history of a project and understanding how it has evolved over time.
